@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SuperMarketDataSet1" targetNamespace="http://tempuri.org/SuperMarketDataSet1.xsd" xmlns:mstns="http://tempuri.org/SuperMarketDataSet1.xsd" xmlns="http://tempuri.org/SuperMarketDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SuperMarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SuperMarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SuperMarket.Properties.Settings.GlobalReference.Default.SuperMarketConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Z_ApartmentTableAdapter" GeneratorDataComponentClassName="Z_ApartmentTableAdapter" Name="Z_Apartment" UserDataComponentName="Z_ApartmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SuperMarketConnectionString (Settings)" DbObjectName="SuperMarket.dbo.Z_Apartment" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT apartment_title FROM dbo.Z_Apartment</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="apartment_title" DataSetColumn="apartment_title" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SuperMarketDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SuperMarketDataSet1" msprop:Generator_UserDSName="SuperMarketDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Z_Apartment" msprop:Generator_TableClassName="Z_ApartmentDataTable" msprop:Generator_TableVarName="tableZ_Apartment" msprop:Generator_TablePropName="Z_Apartment" msprop:Generator_RowDeletingName="Z_ApartmentRowDeleting" msprop:Generator_RowChangingName="Z_ApartmentRowChanging" msprop:Generator_RowEvHandlerName="Z_ApartmentRowChangeEventHandler" msprop:Generator_RowDeletedName="Z_ApartmentRowDeleted" msprop:Generator_UserTableName="Z_Apartment" msprop:Generator_RowChangedName="Z_ApartmentRowChanged" msprop:Generator_RowEvArgName="Z_ApartmentRowChangeEvent" msprop:Generator_RowClassName="Z_ApartmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="apartment_title" msprop:Generator_ColumnVarNameInTable="columnapartment_title" msprop:Generator_ColumnPropNameInRow="apartment_title" msprop:Generator_ColumnPropNameInTable="apartment_titleColumn" msprop:Generator_UserColumnName="apartment_title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
